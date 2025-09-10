@@ -1,0 +1,172 @@
+body{
+  margin: 0px auto;
+  font-family: Poppins;
+  color: white;
+  background-color: #272727;
+ 
+  /* z-index: -100; */
+  
+.body__container{
+  max-width: 1170px;
+  padding: 0 5px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 108px;
+}
+.main{
+ background: url('../img/TravelTime.png') center / cover no-repeat;
+}
+}
+header{
+  margin-top: 72px;
+  width: 100%;
+}
+.nav{
+  /* width: 1170px; */
+  width: 100%;
+}
+.nav__list{
+  display: flex;
+  justify-content: space-between;
+  gap: 120px;
+}
+.list__item{
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 100%;
+  cursor: pointer;
+  transition: all 0.5s;
+  /* position: absolute; */
+}
+.list__item:hover{
+  transform: translate(0px, -5px);
+
+}
+.travel{
+  /* display: flex;
+  align-items: center; */
+}
+.travel__container{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 369px;
+  max-width: 749px;
+  margin-bottom: 133px;
+}
+.travel__title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.travel__title h1{
+  font-size: 97px;
+  font-weight: 700;
+  line-height: 100%;
+}
+.travel__title p{
+  font-size: 24px;
+  font-weight: 276;
+  line-height: 100%;
+  text-align: center;
+}
+.travel__button{
+  background: #00B43D;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  width: 191px;
+  padding: 16px 71px;
+  border: 2px solid #00B43D;
+  border-radius: 8px;
+  transition: all 0.7s;
+}
+.travel__button:hover{
+  background-color: #009331;
+  color:#FEE4E2;
+  border: 2px solid #FEE4E2;
+
+}
+
+
+
+@media (max-width:1200px ) {
+  .nav__list{
+  display: flex;
+  gap: 10px;
+  padding: 0px 15px;
+}
+
+  .list__item{
+  font-size: 18px;
+  font-weight: 500;
+}
+.travel__container{
+  gap: 259px;
+  margin-bottom: 100px;
+}
+.travel__title{
+  gap: 15px;
+}
+.travel__title h1{
+  font-size: 85px;
+  font-weight: 700;
+  line-height: 100%;
+  padding: 0px 15px;
+  text-align: center;
+}
+.travel__title p{
+  font-size: 18px;
+  font-weight: 276;
+  line-height: 100%;
+  text-align: center;
+  padding: 0px 10px;
+
+}
+}
+
+@media (max-width:576px) {
+  header{
+  margin-top: 42px;
+  font-size: 20px;
+}
+  .nav__list{
+  /* display: flex; */
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0px 10px;
+}
+  .list__item{
+  flex: 0 1 30%;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+.travel__container{
+  gap: 209px;
+  margin-bottom: 100px;
+}
+.travel__title{
+  gap: 15px;
+}
+.travel__title h1{
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 100%;
+  padding: 0px 15px;
+  text-align: center;
+}
+.travel__title p{
+  font-size: 15px;
+  font-weight: 276;
+  line-height: 100%;
+  text-align: center;
+  padding: 0px 10px;
+
+}
+}
