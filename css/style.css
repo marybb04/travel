@@ -138,16 +138,13 @@ flex-direction: column;
   max-width: 272px;
   max-height: 252px;
   overflow: hidden;
-  border: 1px solid #d9d9d93e;
+  border: 1px solid #d9d9d900;
   border-radius: 8px;
 }
 .thecard__pic img{
   width: auto;
   height: auto;
   opacity: 80%;
-
- 
-
 }
 .thecard__name {
   font-size: 32px;
