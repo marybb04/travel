@@ -3,6 +3,8 @@ body{
   font-family: Poppins;
   color: white;
   background-color: #272727;
+  line-height: 100%;
+  letter-spacing: 0;
  
   /* z-index: -100; */
   
@@ -17,6 +19,7 @@ body{
 }
 .main{
  background: url('../img/TravelTime.png') center / cover no-repeat;
+ min-height: 100vh;
 }
 }
 header{
@@ -44,10 +47,7 @@ header{
   transform: translate(0px, -5px);
 
 }
-.travel{
-  /* display: flex;
-  align-items: center; */
-}
+
 .travel__container{
 
   display: flex;
@@ -55,7 +55,8 @@ header{
   align-items: center;
   gap: 369px;
   max-width: 749px;
-  margin-bottom: 133px;
+  /* margin-bottom: 133px; */
+  padding-bottom: 133px;;
 }
 .travel__title{
   display: flex;
@@ -77,6 +78,7 @@ header{
 .travel__button{
   background: #00B43D;
   font-size: 24px;
+  font-family: Inter;
   font-weight: 500;
   line-height: 28px;
   width: 191px;
@@ -91,18 +93,147 @@ header{
   border: 2px solid #FEE4E2;
 
 }
+.where{
+background: url('../img/Travel.png') center / cover no-repeat;
+min-height: 100vh;
+display: flex;
+  align-items: center;
+justify-content: space-between;
+flex-direction: column;
+ 
+}
+.where__container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 54px;
+  padding: 126px 44px;
+  /* max-width: 1170px; */
+}
+.where__title h3{
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 100%;
+  text-align: center;
+}
+.where__cards{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 24px;
+}
+.thecard{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  /* align-items: center; */
+  max-width: 320px;
+  background-color: rgb(88, 88, 88, 0.5);
+  padding: 24px;
+  /* opacity:50%; */
+}
+.thecard__pic{
+  max-width: 272px;
+  max-height: 252px;
+  overflow: hidden;
+  /* margin: 24px; */
+  border: 1px solid #D9D9D9;
+  border-radius: 8px;
+  
 
+  /* opacity: 100%; */
+
+}
+.thecard__pic img{
+  width: auto;
+  height: auto;
+  opacity: 80%;
+
+  /* opacity: 100%; */
+
+}
+.thecard__name {
+  font-size: 32px;
+  line-height: 100%;
+  font-weight: 500;
+  align-self: start;
+}
+.thecard__text{
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0;
+  align-self: start;
+  width: 80%;
+
+}
+.thecard__button{
+  align-self: self-end;
+
+}
+.thecard__button button{
+  background-color: rgba(78, 78, 78, 0.45);
+  font-family: Inter;
+  font-weight: 500;
+  border: 1px solid rgba(78, 78, 78, 0.45);
+  border-radius: 8px;
+  color: white;
+  font-size: 12px;
+  line-height: 28px;
+  padding: 6px 17px;
+  transition: all 0.7s;
+}
+.thecard__button button:hover{
+  background-color: rgb(37, 37, 37);
+}
+
+
+
+
+
+@media (max-width:1450px ) {
+  .thecard{
+  flex: 0 1 23%;
+}
+  .thecard__pic{
+  max-width: 212px;
+  max-height: 192px;
+  align-self: center;
+  }
+    .thecard__pic img{
+      margin-top: -10px;
+  }
+
+}
+/* @media (max-width:1450px ) {
+  .thecard{
+  gap: 10px;
+  padding: 20px;
+}
+  .thecard__pic{
+  max-width: 222px;
+  max-height: 202px;
+  align-self: center;
+  }
+    .thecard__pic img{
+      margin-top: -10px;
+  }
+
+} */
 
 
 @media (max-width:1200px ) {
   .nav__list{
   display: flex;
-  gap: 10px;
+  justify-content: space-around;
+  gap: 1px;
   padding: 0px 15px;
 }
 
   .list__item{
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
 }
 .travel__container{
@@ -125,8 +256,60 @@ header{
   line-height: 100%;
   text-align: center;
   padding: 0px 10px;
+}
+.where__container{
+  gap: 40px;
+}
+.where__title h3{
+  font-size:30px;
+}
+  .thecard{
+  gap: 10px;
+  padding: 15px;
+}
+.thecard__name h5{
+  font-size: 22px;
+  font-weight: 500;
+}
+.thecard__text{
+  font-size: 13px;
+}
+.thecard__button button{
+  padding: 4px 15px;
+}
 
 }
+@media (max-width:1128px) {
+  .where__container{
+    gap: 60px;
+  }
+  .where__title{
+  font-size:10px;
+}
+  .where__cards{
+    justify-content: center;
+    gap: 30px;
+    row-gap: 50px;
+  }
+  .thecard{
+    flex: 0 1 60%;
+  }
+
+}
+
+@media (max-width:759px) {
+  .where__container{
+    gap: 60px;
+  }
+  .where__cards{
+    justify-content: center;
+    gap: 30px;
+    row-gap: 50px;
+  }
+  .thecard{
+    flex: 0 1 100%;
+  }
+
 }
 
 @media (max-width:576px) {
@@ -149,7 +332,7 @@ header{
 }
 .travel__container{
   gap: 209px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 .travel__title{
   gap: 15px;
